@@ -3,11 +3,12 @@ header {
     background: #333333;
     color: #fff;
     padding-top: 1em;
-    padding-bottom:5em;
+   
 }
 
 header h2 {
     margin-left: 1em;
+    padding-bottom:3em;
 }
 
 /* Basic nav styling */
