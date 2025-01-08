@@ -1,0 +1,166 @@
+/* Basic header styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #174e70;
+    color: #fff;
+    padding-top: 1em;
+}
+
+header h2 {
+    margin-left: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-family: "Sour Gummy", serif;
+}
+
+#title {
+    color: yellow;
+}
+
+/* Basic nav styling */
+nav {
+    background-color: #333333;
+    justify-items: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 6em;
+    padding: 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* main styling */
+main {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+}
+
+main h2 {
+    background-color: #174e70;
+    color: white;
+
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 95%;
+}
+
+.card-header {
+    background-color: #174e70;
+    color: white;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section h2,
+aside h2 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+section img {
+    width: 10em;
+    margin-left: 1em;
+}
+
+.about-me {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.2em;
+    font-family: "Sour Gummy", serif;
+}
+
+.about-me p {
+    flex: 1;
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+section hr {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.location-details {
+    display: flex;
+    margin-top: 1em;
+    width: 80%;
+    padding: 1em 1em;
+}
+
+.location-details img {
+    width: 10em;
+    border: 1px solid #ccc;
+    margin-right: 1em;
+}
+
+figcaption {
+    padding: 0.5em 1em;
+}
+
+.location-details p {
+    flex: 1;
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+aside {
+    border-radius: 10px;
+    border: 1px solid #b2b2b2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 95%;
+}
+
+/* Footer styling */
+footer {
+    background: #174e70;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    padding: 0.5em 0;
+    color: yellow;
+}
