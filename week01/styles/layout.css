@@ -1,0 +1,58 @@
+/* Basic header styling */
+header {
+    background: #333333;
+    color: #fff;
+    padding-top: 1em;
+    padding-bottom:5em;
+}
+
+header h2 {
+    margin-left: 1em;
+}
+
+/* Basic nav styling */
+nav {   
+    background-color: black;
+    justify-items: center;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 6em;
+    padding: 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+   /* main styling */ 
+main{
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+}
+
+section {
+    background: #cccccc;
+    padding-bottom: 10em;
+}
+ section p, aside p {
+    margin-left: 1em;
+    font-size: 1.3em;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
