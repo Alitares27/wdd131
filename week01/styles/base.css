@@ -10,7 +10,7 @@ header {
     padding-top: 1em;
 }
 
-header h2 {
+header h1 {
     margin-left: 1em;
     padding-bottom: 1em;
     text-align: center;
@@ -42,8 +42,13 @@ nav {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-size: 1em;
+    font-family: "IBM Plex Mono", serif;
+}
+
+.navbar a:hover {
+    color: yellow;
+    text-decoration: underline;
 }
 
 /* main styling */
@@ -110,19 +115,19 @@ section h3 {
     flex: 1;
     margin: 0;
     font-size: 1.2em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "IBM Plex Mono", serif;
     line-height: 1.5;
 }
 
 section hr {
     margin: 0 auto;
-    width: 50%;
+    width: 55%;
 }
 
 .location-details {
     display: flex;
     margin-top: 1em;
-    width: 80%;
+    width: 75%;
     padding: 1em 1em;
 }
 
@@ -140,16 +145,27 @@ figcaption {
     flex: 1;
     margin: 0;
     font-size: 1.2em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "IBM Plex Mono", serif;
     line-height: 1.5;
+    text-align:justify;
 }
 
-aside {
-    border-radius: 10px;
-    border: 1px solid #b2b2b2;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 95%;
+.dev-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50%;
+}
+
+
+.dev-list li {
+    margin: 0 6em;
+    padding: 0.5em;
+    justify-content: center;
+}
+
+.dev-list a {
+    font-size: 1em;
+    font-family: "IBM Plex Mono", serif;
 }
 
 /* Footer styling */
@@ -160,7 +176,7 @@ footer {
     padding: 1rem;
 }
 
-footer p {
+.lastMod {
     padding: 0.5em 0;
     color: yellow;
 }

@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page provides an overview of the WDD 131 - Dynamic Web Fundamentals course, including information about the author, useful web development resources, and details about Rosario, Argentina.">
+    <meta name="author" content="Aldair Payehuanca Arias">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
     <title>WDD 131 - Dynamic Web Fundamentals</title>
 </head>
-
 <body>
     <header>
-        <h2>WDD 131 - Dynamic Web Fundamentals - <span id="title"></span></h2>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span id="title"></span></h1>
 
         <nav>
             <ul class="navbar">
@@ -37,17 +40,14 @@
                 </p>
                 <img src="images/me.jpg" alt="Portrait of people">
             </div>
-
-
             <h3> Rosario, Argentina</h3>
             <hr>
             <div class="location-details">
                 <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/255px-Flag_of_Argentina.svg.png"
+                    <img src="./images/Flag_of_Argentina.svg.png"
                         alt="Official Flag of Madagascar">
                     <figcaption>Official Flag of Argentina</figcaption>
                 </figure>
-
                 <p>
                     Rosario, located on the shores of the Paraná River, is known as the birthplace of the Argentine
                     Flag, with its emblematic National Monument. It is the birthplace of figures such as Lionel
@@ -56,15 +56,23 @@
                 </p>
             </div>
         </section>
-        <aside>
-            <h2 class="card-header">Aside Content</h2>
-        </aside>
+        <section>
+            <div class="card-dev">
+                <h2 class="card-header">Web Dev Resources</h2>
+                <ul class="dev-list">
+                    <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla developer</a></li>
+                    <li><a href="./basic-layout.html" target="_blank">Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
-        <h4>&copy;<span id="year"></span> &#128515 Aldair Payehuanca Arias &#128515 Argentina </h4>
-        <p>Last modification: <span id="modification"></span></p>
+        <p>&copy;<span id="year"></span> &#128515 Aldair Payehuanca Arias &#128515 Argentina </p>
+        <p class="lastMod">Last modification: <span id="modification"></span></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 
 </html>
