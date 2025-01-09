@@ -58,6 +58,7 @@ main {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     margin-left: 1em;
+    max-width: 99%;
 }
 
 main h2 {
