@@ -5,6 +5,8 @@
         --main-heading-bg-color: #004c99;
         --main-padding: 0.5em;
         --main-text-title:"Open Sans", serif;
+        --box-shadow: rgba(0, 0, 0, 0.2) 0.2em 0.2em;
+
     }
 
     .data {
@@ -25,6 +27,7 @@
         padding: 0.5em 0.5em;
         padding-left: 1.5em;
         margin-left: -1em;
+        box-shadow: var(--box-shadow);
     }
 
     .weather {
@@ -41,6 +44,7 @@
         align-items: center;
         background-color: var(--main-heading-bg-color);
         margin-left: -1.5em;
+        box-shadow: var(--box-shadow);
     }
 
     .weatherTitle h2, .icon {
@@ -65,7 +69,6 @@
 
     .weather h2 {
         color: var(--main-text-color);
-
         width: auto;
         margin: 0;
         text-align: left;
