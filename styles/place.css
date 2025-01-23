@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header,
+footer {
+    background-color: #004c99;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+hr {
+    border: 2px solid white;
+}
+
+header h1{
+    font-weight: 900;
+    padding: 0.5rem;
+}
+
+/*Body*/
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 1em;
+}
+
+section h2 {
+    color: #004c99;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Open Sans", serif;
+}
+
+table {
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: "Ubuntu", serif;
+}
+td{
+    padding: 0.2rem 0.2rem;
+}
+
+.fact{
+    text-align: right;
+    font-weight: 700;
+}
+
+.Value{
+    text-align: left;
+}
+
+/*Weather Icon*/
+.weather img {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    padding: 0 0;
+}
+
+/*Footer*/
+footer{
+    height: 5em;
+    font-family: "Ubuntu", serif;
+}
