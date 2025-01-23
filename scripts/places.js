@@ -4,7 +4,7 @@ document.getElementById("year").innerHTML = currentYear;
 const lastModified = document.lastModified;
 document.getElementById("modification").innerHTML = lastModified;
 
-/*Elements & Values*/ */
+/*Elements & Values*/
 let temperature = document.getElementById("degrees");
 temperature.value = 10;
 temperature.textContent = degrees.value + '°C';
