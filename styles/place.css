@@ -48,10 +48,12 @@ td{
     text-align: right;
     font-weight: 700;
     padding-right: 0.5em;
+    font-size: 1rem;
 }
 
 .Value{
     text-align: left;
+    font-size: 1rem;
 }
 
 /*Weather Icon*/
