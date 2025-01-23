@@ -4,7 +4,7 @@ document.getElementById("year").innerHTML = currentYear;
 const lastModified = document.lastModified;
 document.getElementById("modification").innerHTML = lastModified;
 
-/*Function*/
+/*Elements & Values*/ */
 let temperature = document.getElementById("degrees");
 temperature.value = 10;
 temperature.textContent = degrees.value + '°C';
@@ -13,6 +13,8 @@ let windSpeed = document.getElementById("windSpeed");
 windSpeed.value = 5;
 windSpeed.textContent = windSpeed.value + ' km/h';
 
+
+/*Conditions*/ 
 if (degrees.value >= 10 && windSpeed.value >= 4.8) {
     let windChill = document.getElementById("windChill");
     windChill.value = calculateWindChill(degrees.value, windSpeed.value, true);
@@ -21,6 +23,7 @@ if (degrees.value >= 10 && windSpeed.value >= 4.8) {
     windChill.textContent = "N/A";
 }
 
+/*Function*/
 function calculateWindChill(temperature, windSpeed, isCelsius = true) {
     let windChill;
     if (isCelsius) {
