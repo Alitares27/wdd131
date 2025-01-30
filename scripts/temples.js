@@ -92,6 +92,7 @@ const temples = [
   },
 ];
 
+//Display Temples function
 function displayTemples() {
   const container = document.querySelector(".container");
 
@@ -126,7 +127,5 @@ function displayTemples() {
     container.appendChild(card);
   });
 }
-
-
 displayTemples(temples);
 
