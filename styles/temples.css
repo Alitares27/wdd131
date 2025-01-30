@@ -87,7 +87,8 @@ footer {
 }
 
 img {
-    width: 20em;
+    width: 90%;
+    box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.5);
 }
 
 section{
@@ -96,3 +97,13 @@ section{
     text-align: center;
 }
 
+p{
+    text-align: center;
+    line-height: 1;
+    font-size: 95%;
+}
+
+.card{
+    background-color: rgb(243, 243, 243);
+    border-radius: 0.5em;
+}
