@@ -100,7 +100,6 @@ section {
 .card h2{
     font-family: "Sour Gummy", serif;
     line-height: 1;
-    font-display: swap;
 }
 
 p {
@@ -108,7 +107,6 @@ p {
     line-height: 1;
     font-size: 90%;
     font-family: "IBM Plex Mono", serif;
-    font-display: swap;
 }
 
 .card {
