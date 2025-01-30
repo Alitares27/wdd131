@@ -79,16 +79,16 @@ const temples = [
     dedicated: "2015, December, 15",
     area: 26969,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7186-main.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/800x500/2-3c2316607190934fc0265f4107b5013b0cc4b21e.jpeg"
   },
 
   {
     templeName: "Madrid Spain",
     location: "Madrid, Spain",
-    dedicated: "1999, March, 21",   
+    dedicated: "1999, March, 21",
     area: 45800,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/800x500/madrid-spain-temple-954939-wallpaper.jpg"
   },
 ];
 
@@ -103,7 +103,10 @@ function displayTemples() {
     const image = document.createElement("img");
     image.src = temple.imageUrl;
     image.alt = temple.templeName;
-    image.setAttribute("loading","lazy");
+    image.setAttribute("loading", "lazy");
+    image.setAttribute("Alt", temple.templeName);
+    image.setAttribute("width", "600");
+    image.setAttribute("height", "400");
 
     const name = document.createElement("h2");
     name.textContent = temple.templeName;
@@ -117,15 +120,13 @@ function displayTemples() {
     const area = document.createElement("p");
     area.textContent = `Size: ${temple.area} sq ft`;
 
-    
     card.appendChild(name);
     card.appendChild(location);
     card.appendChild(dedication);
     card.appendChild(area);
     card.appendChild(image);
-
     container.appendChild(card);
   });
 }
-displayTemples(temples);
+displayTemples();
 
