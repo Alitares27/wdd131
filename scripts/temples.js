@@ -90,6 +90,14 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/800x500/madrid-spain-temple-954939-wallpaper.jpg"
   },
+  {
+    templeName: "Halifax Nova Scotia",
+    location: "Nova Scotia, Canada",
+    dedicated: "1999, November, 14",
+    area: 10700,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/halifax-nova-scotia/800x500/halifax-nova-scotia-lds-temple-942187-wallpaper.jpg"
+  }
 ];
 
 //Links
