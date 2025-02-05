@@ -15,56 +15,63 @@ navbutton.addEventListener('click', () => {
 });
 
 const products = [
-    {
-      id: "fc-1888",
-      name: "flux capacitor",
-      averagerating: 4.5
-    },
-    {
-      id: "fc-2050",
-      name: "power laces",
-      averagerating: 4.7
-    },
-    {
-      id: "fs-1987",
-      name: "time circuits",
-      averagerating: 3.5
-    },
-    {
-      id: "ac-2000",
-      name: "low voltage reactor",
-      averagerating: 3.9
-    },
-    {
-      id: "jj-1969",
-      name: "warp equalizer",
-      averagerating: 5.0
-    }
-  ];
+  {
+    id: "fc-1888",
+    name: "flux capacitor",
+    averagerating: 4.5
+  },
+  {
+    id: "fc-2050",
+    name: "power laces",
+    averagerating: 4.7
+  },
+  {
+    id: "fs-1987",
+    name: "time circuits",
+    averagerating: 3.5
+  },
+  {
+    id: "ac-2000",
+    name: "low voltage reactor",
+    averagerating: 3.9
+  },
+  {
+    id: "jj-1969",
+    name: "warp equalizer",
+    averagerating: 5.0
+  }
+];
 
-const productSelect = document.getElementById('product');
-products.forEach(product => {
-    const option = document.createElement('option');
-    option.value = product.name;
-    option.textContent = product.name;
-    productSelect.appendChild(option);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const productSelect = document.getElementById('product');
+
+  if (productSelect) {
+      products.forEach(product => {
+          const option = document.createElement('option');
+          option.value = product.name;
+          option.textContent = product.name;
+          productSelect.appendChild(option);
+      });
+  } 
 });
 
-// Track number of reviews completed by the user
-const reviewCounterKey = 'reviewCounter';
+function updateReviewCounter() {
+  // Get the current count from localStorage (default to 0 if not set)
+  let reviewCount = localStorage.getItem("reviewCounter") || 0;
+  reviewCount = parseInt(reviewCount) + 1; // Increase the counter
 
-// Check if the counter exists in localStorage, if not, initialize it
-if (!localStorage.getItem(reviewCounterKey)) {
-  localStorage.setItem(reviewCounterKey, 0);
+  // Save the updated count back to localStorage
+  localStorage.setItem("reviewCounter", reviewCount);
+
+  console.log(reviewCount); // Correctly indented
+
+  // Display the updated count
+  let counter = document.getElementById("counter");
+  counter.textContent = reviewCount;
 }
 
-// Increment the counter each time the page is loaded
-let reviewCounter = parseInt(localStorage.getItem(reviewCounterKey), 10);
-reviewCounter += 1;
-localStorage.setItem(reviewCounterKey, reviewCounter);
+// Call the function to update and display the review counter
+updateReviewCounter();
 
-// Display the counter on the page
-const reviewCounterDisplay = document.getElementById('reviewCounter');
-
-  reviewCounterDisplay.textContent = reviewCounter;
 
