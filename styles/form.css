@@ -130,7 +130,6 @@ select {
     display: flex;
     flex-direction: column;
     padding-bottom: 0.5em;
-    align-items: left;
 }
 
 .installation-container label {
