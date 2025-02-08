@@ -177,12 +177,13 @@ input[type="checkbox"] {
 }
 
 .review-container textarea {
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     height: 10rem;
 }
 
-.review-container span {
+.review-container span, .username span {
     color: blue;
+    font-style: italic;
 }
 
 .username {
